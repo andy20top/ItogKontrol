@@ -1,2 +1,13 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿string[] CreateArray(int length)
+{
+    string[] array = new string [length];
+    for (int i = 0; i < length; i++)
+    {
+        array[i] = Console.ReadLine();
+    }
+    return array;
+}
+
+int length = 5;
+string[] arr = CreateArray(length);
+Console.WriteLine(string.Join("; ", arr));
