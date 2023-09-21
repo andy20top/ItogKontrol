@@ -8,6 +8,13 @@
     return array;
 }
 
+bool IsThreeElement (string array)
+{
+    int count = int.Parse(array.Length.ToString());
+    if (count > 3) return false;
+    return true;
+}
+
 int length = 5;
 string[] arr = CreateArray(length);
-Console.WriteLine(string.Join("; ", arr));
+Console.WriteLine(IsThreeElement("tre"));
